@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Marhey", sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 20px;
+}
+
+
+/* start header */
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px white solid;
+    color: aliceblue;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+
+/* end header */
+
+
+/* start section */
+
+.boss h1,
+p {
+    direction: rtl;
+}
+
+.boss .section img {
+    width: 500px;
+    height: 350px;
+}
+
+.boss {
+    margin: auto;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.section img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section .text {
+    width: 55%;
+    font-size: 18px;
+    height: auto;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* end section */
+
+
+/* جعل الصور تتناسب مع العرض */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* تنسيق النصوص */
+
+.text {
+    font-size: 1rem;
+    /* الخط الأساسي */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* قواعد تخص الهواتف */
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 0.9rem;
+        /* خط أصغر للهواتف */
+    }
+}
+
+
+/* قواعد تخص الأجهزة اللوحية */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .text {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* قواعد تخص شاشات الكمبيوتر */
+
+@media only screen and (min-width: 1025px) {
+    .text {
+        font-size: 1.2rem;
+    }
+}
+
+<div class="section"><img src="cdsm_resized_img_1185_large_time1683155885829.jpg" alt="وصف الصورة"><p class="text">النصوص والصور هنا ستتكيف مع حجم الشاشة المستخدم، مما يضمن تجربة استخدام متجاوبة. </p></div>
